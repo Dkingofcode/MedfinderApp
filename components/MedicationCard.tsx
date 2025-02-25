@@ -44,6 +44,7 @@
 
 import { useCart } from "@/context/CartContext";
 import { Medication } from "@/types";
+import Image from "next/image";
 
 const MedicationCard: React.FC<{ medication: Medication }> = ({ medication }) => {
   const { addToCart } = useCart();

@@ -26,3 +26,5 @@ const PrescriptionScanner = () => {
     </div>
   );
 };
+
+export default PrescriptionScanner;

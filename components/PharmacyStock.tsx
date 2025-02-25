@@ -12,3 +12,5 @@ const StockAvailability = ({ medicationId }: { medicationId: string }) => {
 
   return <p>Stock: {stock !== null ? stock : "Checking..."}</p>;
 };
+
+export default StockAvailability;

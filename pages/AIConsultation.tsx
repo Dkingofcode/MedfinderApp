@@ -1,18 +1,26 @@
-import React from 'react'
+import React from 'react';
+import { useState } from 'react';
+import OpenAI from 'openai-api';
+//import { useEffect } from 'react';
 
-type Props = {};
+
+type Props = {
+    date: string;
+    time: string;
+};
 
 function AIConsultation({}: Props) {
     const [query, setQuery] = useState("");
     const [response, setResponse] = useState("");
   
     const handleConsult = async () => {
-      const openai = new OpenAI({ apiKey: "YOUR_OPENAI_API_KEY" });
-      const completion = await openai.chat.completions.create({
-        model: "gpt-4",
-        messages: [{ role: "user", content: query }],
+      const openai = new OpenAI("YOUR_OPENAI_API_KEY");
+      const completion = await openai.complete({
+        engine: "davinci-codex",
+        prompt: query,
+        maxTokens: 150,
       });
-      setResponse(completion.choices[0].message.content);
+      setResponse(completion.data.choices[0].text);
     };
   
     return (

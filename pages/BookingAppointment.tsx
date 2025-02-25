@@ -1,6 +1,9 @@
 import React from 'react';
 
-type Props = {};
+type Props = {
+  date: string;
+  time: string;
+};
 
 function BookingAppointment({}: Props) {
     return (

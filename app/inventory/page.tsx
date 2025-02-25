@@ -45,7 +45,7 @@ const dummyInventory: Medication[] = [
 
 export default function InventoryPage() {
   const [searchQuery, setSearchQuery] = useState("")
-  const [inventory, setInventory] = useState<Medication[]>(dummyInventory)
+  const [inventory] = useState<Medication[]>(dummyInventory)
 
   const filteredInventory = inventory.filter((item) => item.name.toLowerCase().includes(searchQuery.toLowerCase()))
 
