@@ -25,7 +25,10 @@ function CartPage() {
       </ul>
       <div className="mt-4">
         <p className="font-bold">Total: ${calculateTotal()}</p>
-        <button className="mt-2 px-4 py-2 bg-blue-500 text-white rounded-lg">
+        <button
+          className="mt-2 px-4 py-2 bg-blue-500 text-white rounded-lg"
+          onClick={() => setCart([])}
+        >
           Proceed to Checkout
         </button>
       </div>
