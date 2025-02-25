@@ -12,7 +12,7 @@ const pharmacies = [
     phone: "+234 801 234 5678",
     rating: 4.8,
     distance: "0.5km",
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/markusunsplash.jpg",
     openNow: true,
   },
   {
@@ -22,7 +22,7 @@ const pharmacies = [
     phone: "+234 802 345 6789",
     rating: 4.5,
     distance: "1.2km",
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/tbelunsplash.jpg",
     openNow: true,
   },
   {
@@ -32,7 +32,7 @@ const pharmacies = [
     phone: "+234 803 456 7890",
     rating: 4.6,
     distance: "2.0km",
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/tbelunsplash.jpg",
     openNow: false,
   },
 ]

@@ -14,7 +14,7 @@ export function HeroSection() {
     <div className="relative">
       <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/40">
         <Image
-          src="/placeholder.svg?height=600&width=1920"
+          src="/nationalunsplash.jpg"
           alt="Hero background"
           width={1920}
           height={600}

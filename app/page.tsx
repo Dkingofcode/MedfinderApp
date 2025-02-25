@@ -263,7 +263,7 @@ import { HeroSection } from "@/components/hero-section"
 import { FeaturedProducts } from "@/components/featured-products"
 import { Categories } from "@/components/categories"
 import { NearbyPharmacies } from "@/components/nearby-pharmacies"
-import { PromoSection } from "@/components/promo-section"
+import { PromoSection } from '@/components/promo-section'
 import { CartButton } from "@/components/cart-button"
 
 export default function Home() {
