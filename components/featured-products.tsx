@@ -44,7 +44,7 @@ const products = [
     description: "24-hour non-drowsy allergy relief",
     price: 1800,
     rating: 4.3,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/christinaunsplash.jpg",
     category: "Allergy",
     inStock: false,
   },

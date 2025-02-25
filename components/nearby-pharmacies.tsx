@@ -32,7 +32,7 @@ const pharmacies = [
     phone: "+234 803 456 7890",
     rating: 4.6,
     distance: "2.0km",
-    image: "/tbelunsplash.jpg",
+    image: "/nathanielunsplash.jpg",
     openNow: false,
   },
 ]

@@ -52,7 +52,7 @@ export function ComboboxDemo() {
         <Command>
           <CommandInput placeholder="Search location..." />
           <CommandList>
-            <CommandEmpty>No location found.</CommandEmpty>
+            <CommandEmpty />
             <CommandGroup>
               {locations.map((location) => (
                 <CommandItem
