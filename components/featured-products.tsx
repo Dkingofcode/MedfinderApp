@@ -10,27 +10,27 @@ import { Badge } from "@/components/ui/badge"
 const products = [
   {
     id: "1",
-    name: "Paracetamol Extra",
+    name: "Emzor Paracetamol 500mg",
     description: "Fast-acting pain relief and fever reducer",
     price: 500,
     rating: 4.5,
-    image: "/madisonagardiunsplash.jpg",
+    image: "/james-yarema-kdgiNc0sDeI-unsplash.jpg",
     category: "Pain Relief",
     inStock: true,
   },
   {
     id: "2",
-    name: "Vitamin C Complex",
+    name: "Immunboost Vitamin C 1000mg by 100",
     description: "Immune system support with added zinc",
     price: 1200,
     rating: 4.8,
-    image: "/robertounsplash.jpg",
+    image: "/supliful-supplements-on-demand-Yb94j6zB14I-unsplash.jpg",
     category: "Vitamins",
     inStock: true,
   },
   {
     id: "3",
-    name: "Omega-3 Fish Oil",
+    name: "Seven seas Omega-3 Fish Oil",
     description: "Heart and brain health supplement",
     price: 2500,
     rating: 4.6,
@@ -40,11 +40,11 @@ const products = [
   },
   {
     id: "4",
-    name: "Allergy Relief",
+    name: "Piriton Allergy tablets",
     description: "24-hour non-drowsy allergy relief",
     price: 1800,
     rating: 4.3,
-    image: "/christinaunsplash.jpg",
+    image: "/aleksander-saks-hxvrkYmsDV0-unsplash.jpg",         
     category: "Allergy",
     inStock: false,
   },
@@ -58,7 +58,7 @@ export function FeaturedProducts() {
   }
 
   return (
-    <section className="space-y-8">
+    <section className="space-y-8 bg-orange-50 py-5 px-5 rounded-md">
       <div className="flex items-center justify-between">
         <div>
           <h2 className="text-3xl font-bold">Featured Products</h2>
@@ -102,8 +102,11 @@ export function FeaturedProducts() {
             </CardContent>
             <CardFooter className="p-4 pt-0">
               <div className="flex items-center justify-between w-full">
-                <span className="text-lg font-bold">₦{product.price.toLocaleString()}</span>
-                <Button size="sm" className="gap-2" disabled={!product.inStock}>
+              <Button color="bg-orange-400" size="sm" className="gap-2 bg-orange-400" disabled={!product.inStock}>
+                  <ShoppingCart className="h-4 w-4" />
+                  {"Search nearby"}
+                </Button>
+                <Button color="bg-orange-400" size="sm" className="gap-2 bg-orange-400" disabled={!product.inStock}>
                   <ShoppingCart className="h-4 w-4" />
                   {product.inStock ? "Add to Cart" : "Out of Stock"}
                 </Button>

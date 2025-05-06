@@ -1,13 +1,13 @@
-import { Card, CardContent } from "@/components/ui/card"
-import { Clock, MapPin, Truck } from "lucide-react"
+import { Card, CardContent } from "@/components/ui/card";
+import { Clock, MapPin, Truck } from "lucide-react";
 
 export function PromoSection() {
   return (
-    <div className="container py-12">
+    <div className="container py-12 bg-orange-50">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <Card className="bg-primary/5 border-0">
+        <Card className="bg-orange-400 border-0">
           <CardContent className="p-6 flex items-start gap-4">
-            <div className="p-3 rounded-lg bg-primary/10 text-primary">
+            <div className="p-3 rounded-lg bg-orange-200 text-primary">
               <Truck className="h-6 w-6" />
             </div>
             <div className="space-y-1">
@@ -16,9 +16,9 @@ export function PromoSection() {
             </div>
           </CardContent>
         </Card>
-        <Card className="bg-primary/5 border-0">
+        <Card className="bg-orange-400 border-0">
           <CardContent className="p-6 flex items-start gap-4">
-            <div className="p-3 rounded-lg bg-primary/10 text-primary">
+            <div className="p-3 rounded-lg bg-orange-200 text-primary">
               <Clock className="h-6 w-6" />
             </div>
             <div className="space-y-1">
@@ -27,9 +27,9 @@ export function PromoSection() {
             </div>
           </CardContent>
         </Card>
-        <Card className="bg-primary/5 border-0">
+        <Card className="bg-orange-400 border-0">
           <CardContent className="p-6 flex items-start gap-4">
-            <div className="p-3 rounded-lg bg-primary/10 text-primary">
+            <div className="p-3 rounded-lg bg-orange-200 text-primary">
               <MapPin className="h-6 w-6" />
             </div>
             <div className="space-y-1">
@@ -40,6 +40,6 @@ export function PromoSection() {
         </Card>
       </div>
     </div>
-  )
-}
+  );
+};
 

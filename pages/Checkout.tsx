@@ -3,7 +3,7 @@
 // import { PaystackButton } from "react-paystack"; // If using Paystack
 // import { useRouter } from "next/router";
 
-// const CheckoutPage = ({ cart }) => {
+ const CheckoutPage = () => {
 // //  const navigate = useNavigate();
 //   const totalAmount = cart.reduce((total, item) => total + item.price * item.quantity, 0);
 //   const router = useRouter();
@@ -42,6 +42,6 @@
 //       </div>
 //     </div>
 //   );
-// };
+ };
 
-// export default CheckoutPage;
+ export default CheckoutPage;

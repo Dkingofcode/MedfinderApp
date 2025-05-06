@@ -11,17 +11,18 @@ export function HeroSection() {
   const [query, setQuery] = useState("")
 
   return (
-    <div className="relative">
-      <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/40">
-        <Image
-          src="/nationalunsplash.jpg"
-          alt="Hero background"
-          width={1920}
-          height={600}
-          className="object-cover w-full h-full mix-blend-overlay"
-          priority
-        />
-      </div>
+    <div className="relative bg-orange-50  h-[1200px] overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-r  flex items-center justify-center">
+  <Image
+    src="/20250506_1204_Friendly Pharmacist Interaction_simple_compose_01jtkfn3jzf6vvz6gjztspc6t5.png"
+    alt="Hero background"
+    width={1200}
+    height={100}
+    className="object-cover max-h-500 max-w-full "
+    priority
+  />
+</div>
+
       <div className="relative container py-24 md:py-32">
         <div className="max-w-2xl space-y-8 text-white">
           <h1 className="text-4xl md:text-6xl font-bold leading-tight">Find and Order Your Medications with Ease</h1>

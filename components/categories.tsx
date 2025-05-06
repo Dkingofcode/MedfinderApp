@@ -42,7 +42,7 @@ const categories = [
 
 export function Categories() {
   return (
-    <section className="space-y-8">
+    <section className="space-y-8 bg-orange-50 py-5 px-5 rounded-md">
       <div>
         <h2 className="text-3xl font-bold">Browse Categories</h2>
         <p className="text-muted-foreground">Find medications and health products by category</p>

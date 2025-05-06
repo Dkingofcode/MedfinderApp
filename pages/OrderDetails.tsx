@@ -3,6 +3,19 @@
 // import { useState } from "react";
 
 
+import React from 'react'
+
+const OrderDetails = () => {
+  return (
+    <div>
+      
+    </div>
+  )
+}
+
+export default OrderDetails
+
+
 // type Props = {};
 
 // const socket = io("http://localhost:4000");

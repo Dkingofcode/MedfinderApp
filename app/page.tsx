@@ -265,6 +265,9 @@ import { Categories } from "@/components/categories"
 import { NearbyPharmacies } from "@/components/nearby-pharmacies"
 import { PromoSection } from '@/components/promo-section'
 import { CartButton } from "@/components/cart-button"
+import { HowItWorks } from "@/components/HowitWorks"
+import MedfinderPromo from "@/components/PlayStore"
+
 
 export default function Home() {
   return (
@@ -277,6 +280,8 @@ export default function Home() {
           <FeaturedProducts />
           <Categories />
           <NearbyPharmacies />
+          <HowItWorks />
+          <MedfinderPromo />
         </div>
       </main>
       <CartButton />

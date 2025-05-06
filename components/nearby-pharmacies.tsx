@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/badge"
 const pharmacies = [
   {
     id: "1",
-    name: "HealthPlus Pharmacy",
+    name: "Ace Pharmacy",
     address: "123 Marina Street, Lagos Island",
     phone: "+234 801 234 5678",
     rating: 4.8,
@@ -17,7 +17,7 @@ const pharmacies = [
   },
   {
     id: "2",
-    name: "MedPlus Pharmacy",
+    name: "Medikal Pharmacy",
     address: "456 Victoria Island Road",
     phone: "+234 802 345 6789",
     rating: 4.5,
@@ -39,10 +39,10 @@ const pharmacies = [
 
 export function NearbyPharmacies() {
   return (
-    <section className="space-y-8">
+    <section className="space-y-8 bg-orange-50 py-5 px-5 rounded-sm">
       <div className="flex items-center justify-between">
         <div>
-          <h2 className="text-3xl font-bold">Nearby Pharmacies</h2>
+          <h2 className="text-3xl font-bold">Nearby Pharmacies to you </h2>
           <p className="text-muted-foreground">Find medications at local stores</p>
         </div>
         <Button variant="link" className="text-primary">
@@ -64,7 +64,7 @@ export function NearbyPharmacies() {
             </CardHeader>
             <CardContent className="p-4">
               <div className="flex items-center justify-between mb-2">
-                <Badge variant={pharmacy.openNow ? "default" : "secondary"}>
+                <Badge className={pharmacy.openNow ? "bg-orange-300" : "bg-red-100"}>
                   {pharmacy.openNow ? "Open Now" : "Closed"}
                 </Badge>
                 <div className="flex items-center gap-1 text-primary">
@@ -89,7 +89,7 @@ export function NearbyPharmacies() {
               </CardDescription>
             </CardContent>
             <CardFooter className="p-4 pt-0">
-              <Button className="w-full">View Store</Button>
+              <Button className="w-full bg-orange-400">View Store</Button>
             </CardFooter>
           </Card>
         ))}
